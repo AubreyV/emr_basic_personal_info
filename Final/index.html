@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Emergency Medical Record</title>
+    <link rel="stylesheet" href="bulma-0.7.0/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  </head>
+  <body>
+  <!-- Personal Information -->
+  <section class="section">
+    <div class="container">
+        <h2 class="title">Personal Information</h2>
+        <!-- Name -->
+        <div class="level">
+            <div class="field column is-grouped is-8">
+                <div class="column is-6">
+                    <label class="label">Last Name</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="e.g. de la Cruz">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                        </span>
+                    </p>
+                </div>
+                <div class="column is-6">
+                    <label class="label">First Name</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="email" placeholder="e.g. Juan">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-user"></i>
+                        </span>                                
+                    </p>   
+                </div>
+            </div>
+        </div>
+        <!-- Birth -->
+        <div class="level">
+            <div class="field is-grouped column is-8">
+                <div class="column is-3">
+                    <label class="label">Birth Date</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="date">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-calendar-alt"></i>
+                        </span>                        
+                    </p>
+                </div>
+                
+                <div class="column is-6">
+                                <label class="label">Marital Status</label>
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    Single
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="question">
+                                    Married
+                                </label>
+                                <label class="radio">
+                                        <input type="radio" name="question">
+                                        Widow/er
+                                </label>
+                                <label class="radio">
+                                        <input type="radio" name="question">
+                                        Separated
+                                </label>
+                            </div>
+
+                <div class="column is-3">
+                    <label class="label">Sex</label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                        Male
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                        Female
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- Contact Details -->
+        <div class="level">
+            <div class="field column is-grouped is-8">
+                <div class="column is-4">
+                    <label class="label">Email</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="email" placeholder="e.g. juan@gmail.com">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>                                
+                    </p>
+                </div>                    
+                <div class="column is-4">
+                    <label class="label">Telephone Number</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-phone"></i>
+                        </span>                                
+                    </p>
+                </div>
+                 <div class="column is-4">
+                    <label class="label">Cellphone Number</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-mobile-alt"></i>
+                        </span>                                
+                    </p>
+                </div>                   
+            </div>
+        </div>
+        <!-- Address -->
+        <div class="level">
+            <div class="field column is-grouped">
+                <div class="column is-8">
+                    <label class="label">Detailed Address</label>
+                    <div class="conrol">
+                            <input class="input" type="text">
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="level">
+            <div class="field column is-grouped is-8">
+                <div class="column is-3">
+                    <label class="label">Region</label>
+                        <p class="control has-icons-left">
+                            <input class="input" type="text">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-marker"></i>
+                            </span>                                
+                        </p>
+                </div>
+                <div class="column is-3">
+                    <label class="label">Province</label>
+                        <p class="control has-icons-left">
+                            <input class="input" type="text">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-marker"></i>
+                            </span>                                
+                        </p>
+                </div>         
+                <div class="column is-3">
+                    <label class="label">City</label>
+                        <p class="control has-icons-left">
+                            <input class="input" type="text">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-marker"></i>
+                            </span>                                
+                        </p>
+                </div>
+                <div class="column is-3">
+                    <label class="label">Baranggay</label>
+                        <p class="control has-icons-left">
+                            <input class="input" type="text">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-marker"></i>
+                            </span>                                
+                        </p>
+                </div>
+            </div>
+            
+        </div>      
+    </div>
+  </section>
+  <!-- Emergency contact details -->
+  <section class="section">
+    <div class="container is-widescreen">
+        <h2 class="title">Emergency Contact Details</h2>
+        <div class="level">
+            <div class="field column is-grouped is-8">
+                <div class="column is-4">
+                    <label class="label">Name</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="e.g. Juan de la Cruz">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-user"></i>
+                            </span>                                    
+                    </p>
+                </div>
+                <div class="column is-4">
+                    <label class="label">Relationship</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="e.g. Parent">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-user"></i>
+                            </span>
+                    </p>
+                </div>
+                <div class="column is-4">
+                    <label class="label">Contact Number</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-mobile"></i>
+                            </span>                                
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- Medical Background -->
+  <section class="section">
+    <div class="container">
+        <h2 class="title">Medical Background</h2>
+        <div class="level">
+            <div class="field column is-grouped">
+                <div class="column is-2">
+                    <label class="label">Blood Type</label>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="e.g. O">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-tint"></i>
+                        </span>                           
+                    </p>
+                </div>
+                <div class="column is-3">
+                    <label class="label">Height(m)</label>
+                    <div class="control">
+                        <input class="input" type="text">
+                        </div>
+                </div>
+                <div class="column is-3">
+                    <label class="label">Weight(kg)</label>
+                        <p class="control has-icons-left">
+                            <input class="input" type="text" placeholder="e.g. 45">
+                            <span class="icon is-small is-left">
+                              <i class="fas fa-weight"></i>
+                            </span>                                    
+                        </p>
+                </div>
+            </div>
+        </div>
+            
+        <div class="level">
+            <div class="field column is-grouped">
+                <div class="column is-8">
+                    <label class="label">Allergies</label>
+                    <p class="control has-icons-left">
+                        <textarea class="textarea"></textarea>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-allergies"></i>
+                        </span>
+                    </p>
+                </div>      
+            </div>
+        </div>
+        <div class="level">
+            <div class="field column is-grouped">
+                <div class="column is-8">
+                <label class="label">Medical History</label>
+                    <p class="control has-icons-left">
+                        <textarea class="textarea"></textarea>
+                        <span class="icon is-small is-left">
+                            <i class="fas fa-notes-medical"></i>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+      </section>
+  </body>
+</html>

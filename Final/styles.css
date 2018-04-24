@@ -1,0 +1,20 @@
+body{
+    background-image: url(tree.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.field{
+    padding:0rem;
+}
+.column{
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+}
+.level:not(:last-child){
+    margin-bottom: 0.5rem;
+    
+}
+.section{
+    padding: 10px;
+}
