@@ -6,7 +6,7 @@
     <title>Emergency Medical Record</title>
     <link rel="stylesheet" href="bulma-0.7.0/css/bulma.min.css">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body>
   <!-- Personal Information -->
@@ -50,24 +50,24 @@
                 </div>
                 
                 <div class="column is-6">
-                                <label class="label">Marital Status</label>
-                                <label class="radio">
-                                    <input type="radio" name="question">
-                                    Single
-                                </label>
-                                <label class="radio">
-                                    <input type="radio" name="question">
-                                    Married
-                                </label>
-                                <label class="radio">
-                                        <input type="radio" name="question">
-                                        Widow/er
-                                </label>
-                                <label class="radio">
-                                        <input type="radio" name="question">
-                                        Separated
-                                </label>
-                            </div>
+                    <label class="label">Marital Status</label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                         Single
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                            Married
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                            Widow/er
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="question">
+                            Separated
+                    </label>
+                </div>
 
                 <div class="column is-3">
                     <label class="label">Sex</label>
@@ -119,9 +119,12 @@
             <div class="field column is-grouped">
                 <div class="column is-8">
                     <label class="label">Detailed Address</label>
-                    <div class="conrol">
-                            <input class="input" type="text">
-                    </div>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-home"></i>
+                        </span>                                
+                    </p>
                 </div>        
             </div>
         </div>
@@ -132,7 +135,7 @@
                         <p class="control has-icons-left">
                             <input class="input" type="text">
                             <span class="icon is-small is-left">
-                              <i class="fas fa-marker"></i>
+                              <i class="fas fa-globe"></i>
                             </span>                                
                         </p>
                 </div>
@@ -141,7 +144,7 @@
                         <p class="control has-icons-left">
                             <input class="input" type="text">
                             <span class="icon is-small is-left">
-                              <i class="fas fa-marker"></i>
+                              <i class="fas fa-map-marker"></i>
                             </span>                                
                         </p>
                 </div>         
@@ -150,7 +153,7 @@
                         <p class="control has-icons-left">
                             <input class="input" type="text">
                             <span class="icon is-small is-left">
-                              <i class="fas fa-marker"></i>
+                              <i class="fas fa-circle"></i>
                             </span>                                
                         </p>
                 </div>
@@ -159,7 +162,7 @@
                         <p class="control has-icons-left">
                             <input class="input" type="text">
                             <span class="icon is-small is-left">
-                              <i class="fas fa-marker"></i>
+                              <i class="fas fa-location-arrow"></i>
                             </span>                                
                         </p>
                 </div>
@@ -223,9 +226,12 @@
                 </div>
                 <div class="column is-3">
                     <label class="label">Height(m)</label>
-                    <div class="control">
-                        <input class="input" type="text">
-                        </div>
+                    <p class="control has-icons-left">
+                        <input class="input" type="text" placeholder="e.g. 4.3">
+                        <span class="icon is-small is-left">
+                        <i class="fas fa-arrows-alt-v"></i>
+                        </span>                           
+                    </p>
                 </div>
                 <div class="column is-3">
                     <label class="label">Weight(kg)</label>
@@ -244,9 +250,9 @@
                 <div class="column is-8">
                     <label class="label">Allergies</label>
                     <p class="control has-icons-left">
-                        <textarea class="textarea"></textarea>
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-allergies"></i>
+                        <textarea class="textarea input"></textarea>
+                        <span class="icon is-medium is-left">
+                            <i class="fas fa-allergies fa-2x"></i>
                         </span>
                     </p>
                 </div>      
@@ -257,15 +263,31 @@
                 <div class="column is-8">
                 <label class="label">Medical History</label>
                     <p class="control has-icons-left">
-                        <textarea class="textarea"></textarea>
-                        <span class="icon is-small is-left">
-                            <i class="fas fa-notes-medical"></i>
+                        <textarea class="textarea input"></textarea>
+                        <span class="icon is-medium is-left">
+                            <i class="fas fa-notes-medical fa-2x"></i>
                         </span>
                     </p>
                 </div>
             </div>
         </div>
-        
       </section>
+      <section class="section">
+          <div class="container">
+            <div class="level">
+                <div class="field column is-grouped">
+                    <div class="column is-8">
+                        <div class="control">            
+                            <button class="button is-link is-rounded">Submit</button> 
+                        </div> 
+                    </div>
+                       
+                </div>
+            </div>
+          </div>
+
+      </section>
+      
+      
   </body>
 </html>
