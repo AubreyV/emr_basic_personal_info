@@ -56,13 +56,13 @@
 	}
 
     function active(input) {
-        console.log("active" + input.name);
+        console.log("active: " + input.name);
         var time = stopwatch.get_elapsed_milliseconds();
         start_map[input.name]=time;
     }
 
     function inactive(input) {
-        console.log("inactive" + input.name);
+        console.log("inactive: " + input.name);
         var time = stopwatch.get_elapsed_milliseconds();
         end_map[input.name]=time;
         total(input);
@@ -79,19 +79,20 @@
 
     function write_to_file(total){
         var json = JSON.stringify(total);
+        json = "==time in milliseconds==\n\n" + json;
+        var submit = document.getElementById("submit");
+        // submit.style.visibility = "hidden";
 
-        document.getElementById("submit").style.visibility = "hidden";
-
-        var button = document.createElement("button");
-        var note = document.createElement("p");
-        note.innerHTML = "Please click the <em>Download</em> button after submitting."
-        var go = document.createElement("a");
-        go.innerHTML = "Download";
-        button.appendChild(go);
-        document.body.appendChild(button);
-        document.body.appendChild(note);
+        // var button = document.createElement("button");
+        // var note = document.createElement("p");
+        // note.innerHTML = "Please click the <em>Download</em> button after submitting."
+        // var go = document.createElement("a");
+        // go.innerHTML = "Download";
+        // button.appendChild(go);
+        // document.body.appendChild(button);
+        // document.body.appendChild(note);
 
         var file = new File([json], {type: "application/octet-stream"});
-        go.href = (URL || webkitURL).createObjectURL(file);
-        go.download = "data.txt";
+        submit.href = (URL || webkitURL).createObjectURL(file);
+        submit.download = "data.txt";
     }
