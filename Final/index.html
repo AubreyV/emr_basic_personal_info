@@ -42,7 +42,7 @@
                 <div class="column is-3">
                     <label class="label">Birth Date</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="date" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" type="date" name="birthdate" onclick="active(this)" onblur="inactive(this)">
                         <span class="icon is-small is-left">
                           <i class="fas fa-calendar-alt"></i>
                         </span>                        
@@ -52,19 +52,19 @@
                 <div class="column is-6">
                     <label class="label">Marital Status</label>
                     <label class="radio">
-                        <input type="radio" name="question" onclick="active(this)" onblur="inactive(this)">
+                        <input type="radio" name="single" onclick="active(this)" onblur="inactive(this)">
                          Single
                     </label>
                     <label class="radio">
-                        <input type="radio" name="question" onclick="active(this)" onblur="inactive(this)">
+                        <input type="radio" name="married" onclick="active(this)" onblur="inactive(this)">
                             Married
                     </label>
                     <label class="radio">
-                        <input type="radio" name="question" onclick="active(this)" onblur="inactive(this)">
+                        <input type="radio" name="windowed" onclick="active(this)" onblur="inactive(this)">
                             Widow/er
                     </label>
                     <label class="radio">
-                        <input type="radio" name="question" onclick="active(this)" onblur="inactive(this)">
+                        <input type="radio" name="separated" onclick="active(this)" onblur="inactive(this)">
                             Separated
                     </label>
                 </div>
@@ -72,11 +72,11 @@
                 <div class="column is-3">
                     <label class="label">Sex</label>
                     <label class="radio">
-                        <input type="radio" name="question" onclick="active(this)" onblur="inactive(this)">
+                        <input type="radio" name="sex" onclick="active(this)" onblur="inactive(this)">
                         Male
                     </label>
                     <label class="radio">
-                        <input type="radio" name="question" onclick="active(this)" onblur="inactive(this)">
+                        <input type="radio" name="sex" onclick="active(this)" onblur="inactive(this)">
                         Female
                     </label>
                 </div>
@@ -88,7 +88,7 @@
                 <div class="column is-4">
                     <label class="label">Email</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="email" placeholder="e.g. juan@gmail.com" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="email" type="email" placeholder="e.g. juan@gmail.com" onclick="active(this)" onblur="inactive(this)">
                         <span class="icon is-small is-left">
                           <i class="fas fa-envelope"></i>
                         </span>                                
@@ -97,7 +97,7 @@
                 <div class="column is-4">
                     <label class="label">Telephone Number</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="telephone" type="text" onclick="active(this)" onblur="inactive(this)">
                         <span class="icon is-small is-left">
                           <i class="fas fa-phone"></i>
                         </span>                                
@@ -106,7 +106,7 @@
                  <div class="column is-4">
                     <label class="label">Cellphone Number</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="cellphone" type="text" onclick="active(this)" onblur="inactive(this)">
                         <span class="icon is-small is-left">
                           <i class="fas fa-mobile-alt"></i>
                         </span>                                
@@ -120,7 +120,7 @@
                 <div class="column is-8">
                     <label class="label">Detailed Address</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="detailed_address" type="text" onclick="active(this)" onblur="inactive(this)">
                         <span class="icon is-small is-left">
                           <i class="fas fa-home"></i>
                         </span>                                
@@ -133,7 +133,7 @@
                 <div class="column is-3">
                     <label class="label">Region</label>
                         <p class="control has-icons-left">
-                            <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                            <input class="input" name="region" type="text" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-globe"></i>
                             </span>                                
@@ -142,7 +142,7 @@
                 <div class="column is-3">
                     <label class="label">Province</label>
                         <p class="control has-icons-left">
-                            <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                            <input class="input" name="province" type="text" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-map-marker"></i>
                             </span>                                
@@ -151,7 +151,7 @@
                 <div class="column is-3">
                     <label class="label">City</label>
                         <p class="control has-icons-left">
-                            <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                            <input class="input" name="city" type="text" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-circle"></i>
                             </span>                                
@@ -160,7 +160,7 @@
                 <div class="column is-3">
                     <label class="label">Baranggay</label>
                         <p class="control has-icons-left">
-                            <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                            <input class="input" name="baranggay" type="text" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-location-arrow"></i>
                             </span>                                
@@ -180,7 +180,7 @@
                 <div class="column is-4">
                     <label class="label">Name</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" placeholder="e.g. Juan de la Cruz" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="emergency_contact_name" type="text" placeholder="e.g. Juan de la Cruz" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-user"></i>
                             </span>                                    
@@ -189,7 +189,7 @@
                 <div class="column is-4">
                     <label class="label">Relationship</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" placeholder="e.g. Parent" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="emergency_contact_relationship" type="text" placeholder="e.g. Parent" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-user"></i>
                             </span>
@@ -198,7 +198,7 @@
                 <div class="column is-4">
                     <label class="label">Contact Number</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="emergency_contact_number" type="text" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-mobile"></i>
                             </span>                                
@@ -218,7 +218,7 @@
                 <div class="column is-2">
                     <label class="label">Blood Type</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" placeholder="e.g. O" onclick="active(this)" onblur="inactive(this)">
+                        <input class="input" name="bloodtype" type="text" placeholder="e.g. O" onclick="active(this)" onblur="inactive(this)">
                         <span class="icon is-small is-left">
                         <i class="fas fa-tint"></i>
                         </span>                           
@@ -227,7 +227,9 @@
                 <div class="column is-3">
                     <label class="label">Height(m)</label>
                     <p class="control has-icons-left">
-                        <input class="input" type="text" placeholder="e.g. 1.65" onclick="active(this)" onblur="inactive(this)">
+
+                        <input class="input" name="height" type="text" placeholder="e.g. 1.65" onclick="active(this)" onblur="inactive(this)">
+
                         <span class="icon is-small is-left">
                         <i class="fas fa-arrows-alt-v"></i>
                         </span>                           
@@ -236,7 +238,7 @@
                 <div class="column is-3">
                     <label class="label">Weight(kg)</label>
                         <p class="control has-icons-left">
-                            <input class="input" type="text" placeholder="e.g. 45" onclick="active(this)" onblur="inactive(this)">
+                            <input class="input" name="weight" type="text" placeholder="e.g. 45" onclick="active(this)" onblur="inactive(this)">
                             <span class="icon is-small is-left">
                               <i class="fas fa-weight"></i>
                             </span>                                    
@@ -250,7 +252,7 @@
                 <div class="column is-8">
                     <label class="label">Allergies</label>
                     <p class="control has-icons-left">
-                        <textarea class="textarea input" onclick="active(this)" onblur="inactive(this)"></textarea>
+                        <textarea class="textarea input" name="allergies" onclick="active(this)" onblur="inactive(this)"></textarea>
                         <span class="icon is-medium is-left">
                             <i class="fas fa-allergies fa-2x"></i>
                         </span>
@@ -263,7 +265,7 @@
                 <div class="column is-8">
                 <label class="label">Medical History</label>
                     <p class="control has-icons-left">
-                        <textarea class="textarea input" onclick="active(this)" onblur="inactive(this)"></textarea>
+                        <textarea class="textarea input" name="medical_history" onclick="active(this)" onblur="inactive(this)"></textarea>
                         <span class="icon is-medium is-left">
                             <i class="fas fa-notes-medical fa-2x"></i>
                         </span>
