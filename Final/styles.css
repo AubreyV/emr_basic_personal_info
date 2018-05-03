@@ -1,21 +1,35 @@
-body{
-    background-color:skyblue;
-    background-image: url(tree.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+textarea{
+    line-height: 1.5;
 }
-
-.field{
-    padding:0rem;
+select{
+    background-color: #f9fafa;
+    border-color: #d4d9dd;
+    border-radius: 3px;
+}
+.center{
+    text-align: center;
 }
 .column{
     padding-bottom: 0rem;
     padding-top: 0rem;
 }
-.level:not(:last-child){
-    margin-bottom: 0.5rem;
-    
+
+.border{
+    background-color: #f9fafa;
+    border-color: #40484a;
+    box-shadow: 1 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding-top:30px;
+    padding-bottom: 30px;
 }
-.section{
-    padding: 10px;
+.input{
+    border-color: #d4d9dd;
+    border-radius: 3px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.label{
+    caret-color: #40484a;
 }

@@ -9,287 +9,266 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
   </head>
   <body onload="start_time()">
-  <!-- Personal Information -->
-  <section class="section">
-    <div class="container">
-        <h2 class="title">Personal Information</h2>
-        <!-- Name -->
-        <div class="level">
-            <div class="field column is-grouped is-8">
-                <div class="column is-6">
-                    <label class="label">Last Name</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="lastname" type="text" placeholder="e.g. de la Cruz" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-user"></i>
-                        </span>
-                    </p>
-                </div>
-                <div class="column is-6">
-                    <label class="label">First Name</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="firstname" type="email" placeholder="e.g. Juan" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-user"></i>
-                        </span>                                
-                    </p>   
-                </div>
-            </div>
+      <section class="section header">
+        <h1 class="title is-2 center">Emergency Medical Record</h1>
+      </section> 
+      <container class="border column is-half is-offset-one-quarter field">
+        <div class="level column is-12">
+            <h2 class="title is-5 center">Personal Information</h2>
         </div>
-        <!-- Birth -->
-        <div class="level">
-            <div class="field is-grouped column is-8">
-                <div class="column is-3">
-                    <label class="label">Birth Date</label>
-                    <p class="control has-icons-left">
-                        <input class="input" type="date" name="birthdate" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-calendar-alt"></i>
-                        </span>                        
-                    </p>
-                </div>
-                
-                <div class="column is-6">
-                    <label class="label">Marital Status</label>
-                    <label class="radio">
-                        <input type="radio" name="single" oninput="active(this)" onblur="inactive(this)">
-                         Single
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="married" oninput="active(this)" onblur="inactive(this)">
-                            Married
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="windowed" oninput="active(this)" onblur="inactive(this)">
-                            Widow/er
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="separated" oninput="active(this)" onblur="inactive(this)">
-                            Separated
-                    </label>
-                </div>
-
-                <div class="column is-3">
-                    <label class="label">Sex</label>
-                    <label class="radio">
-                        <input type="radio" name="sex" oninput="active(this)" onblur="inactive(this)">
-                        Male
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="sex" oninput="active(this)" onblur="inactive(this)">
-                        Female
-                    </label>
-                </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Name*</label>
             </div>
-        </div>
-        <!-- Contact Details -->
-        <div class="level">
-            <div class="field column is-grouped is-8">
-                <div class="column is-4">
-                    <label class="label">Email</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="email" type="email" placeholder="e.g. juan@gmail.com" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-envelope"></i>
-                        </span>                                
-                    </p>
-                </div>                    
-                <div class="column is-4">
-                    <label class="label">Telephone Number</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="telephone" type="text" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-phone"></i>
-                        </span>                                
-                    </p>
-                </div>
-                 <div class="column is-4">
-                    <label class="label">Cellphone Number</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="cellphone" type="text" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-mobile-alt"></i>
-                        </span>                                
-                    </p>
-                </div>                   
-            </div>
-        </div>
-        <!-- Address -->
-        <div class="level">
-            <div class="field column is-grouped">
-                <div class="column is-8">
-                    <label class="label">Detailed Address</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="detailed_address" type="text" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                          <i class="fas fa-home"></i>
-                        </span>                                
-                    </p>
-                </div>        
-            </div>
-        </div>
-        <div class="level">
-            <div class="field column is-grouped is-8">
-                <div class="column is-3">
-                    <label class="label">Region</label>
-                        <p class="control has-icons-left">
-                            <input class="input" name="region" type="text" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-globe"></i>
-                            </span>                                
-                        </p>
-                </div>
-                <div class="column is-3">
-                    <label class="label">Province</label>
-                        <p class="control has-icons-left">
-                            <input class="input" name="province" type="text" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-map-marker"></i>
-                            </span>                                
-                        </p>
-                </div>         
-                <div class="column is-3">
-                    <label class="label">City</label>
-                        <p class="control has-icons-left">
-                            <input class="input" name="city" type="text" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-circle"></i>
-                            </span>                                
-                        </p>
-                </div>
-                <div class="column is-3">
-                    <label class="label">Baranggay</label>
-                        <p class="control has-icons-left">
-                            <input class="input" name="baranggay" type="text" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-location-arrow"></i>
-                            </span>                                
-                        </p>
-                </div>
-            </div>
-            
-        </div>      
-    </div>
-  </section>
-  <!-- Emergency contact details -->
-  <section class="section">
-    <div class="container is-widescreen">
-        <h2 class="title">Emergency Contact Details</h2>
-        <div class="level">
-            <div class="field column is-grouped is-8">
-                <div class="column is-4">
-                    <label class="label">Name</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="emergency_contact_name" type="text" placeholder="e.g. Juan de la Cruz" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-user"></i>
-                            </span>                                    
-                    </p>
-                </div>
-                <div class="column is-4">
-                    <label class="label">Relationship</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="emergency_contact_relationship" type="text" placeholder="e.g. Parent" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-user"></i>
-                            </span>
-                    </p>
-                </div>
-                <div class="column is-4">
-                    <label class="label">Contact Number</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="emergency_contact_number" type="text" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-mobile"></i>
-                            </span>                                
-                    </p>
-                </div>
-                
-            </div>
-        </div>
-    </div>
-  </section>
-  <!-- Medical Background -->
-  <section class="section">
-    <div class="container">
-        <h2 class="title">Medical Background</h2>
-        <div class="level">
-            <div class="field column is-grouped">
-                <div class="column is-2">
-                    <label class="label">Blood Type</label>
-                    <p class="control has-icons-left">
-                        <input class="input" name="bloodtype" type="text" placeholder="e.g. O" oninput="active(this)" onblur="inactive(this)">
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-tint"></i>
-                        </span>                           
-                    </p>
-                </div>
-                <div class="column is-3">
-                    <label class="label">Height(m)</label>
-                    <p class="control has-icons-left">
-
-                        <input class="input" name="height" type="text" placeholder="e.g. 1.65" oninput="active(this)" onblur="inactive(this)">
-
-                        <span class="icon is-small is-left">
-                        <i class="fas fa-arrows-alt-v"></i>
-                        </span>                           
-                    </p>
-                </div>
-                <div class="column is-3">
-                    <label class="label">Weight(kg)</label>
-                        <p class="control has-icons-left">
-                            <input class="input" name="weight" type="text" placeholder="e.g. 45" oninput="active(this)" onblur="inactive(this)">
-                            <span class="icon is-small is-left">
-                              <i class="fas fa-weight"></i>
-                            </span>                                    
-                        </p>
-                </div>
-            </div>
-        </div>
-            
-        <div class="level">
-            <div class="field column is-grouped">
-                <div class="column is-8">
-                    <label class="label">Allergies</label>
-                    <p class="control has-icons-left">
-                        <textarea class="textarea input" name="allergies" oninput="active(this)" onblur="inactive(this)"></textarea>
-                        <span class="icon is-medium is-left">
-                            <i class="fas fa-allergies fa-2x"></i>
-                        </span>
-                    </p>
-                </div>      
-            </div>
-        </div>
-        <div class="level">
-            <div class="field column is-grouped">
-                <div class="column is-8">
-                <label class="label">Medical History</label>
-                    <p class="control has-icons-left">
-                        <textarea class="textarea input" name="medical_history" oninput="active(this)" onblur="inactive(this)"></textarea>
-                        <span class="icon is-medium is-left">
-                            <i class="fas fa-notes-medical fa-2x"></i>
-                        </span>
-                    </p>
-                </div>
-            </div>
-        </div>
-      </section>
-      <section class="section">
-          <div class="container">
-            <div class="level">
-                <div class="field column is-grouped">
-                    <div class="column is-8">
-                        <div class="control">            
-                            <a class="button is-link is-rounded" id="submit" onclick="end_time()" >Submit</a> 
-                        </div> 
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                            <input class="input" name="lastname" type="text" placeholder="Lastname" oninput="active(this)" onblur="inactive(this)">
                     </div>
-                       
+                </div>
+                <div class="field">
+                    <div class="control">
+                            <input class="input" name="firstname" type="text" placeholder="Firstname" oninput="active(this)" onblur="inactive(this)">
+                    </div>
                 </div>
             </div>
-          </div>
-
-      </section>
-      
-  <script type="text/javascript" src="timer.js"></script>
+        </div>
+        
+        <div class="level column is-12 field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Birth Date</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                                <input class="input" name="birthdate" type="date" oninput="active(this)" onblur="inactive(this)">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Sex</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="sex" oninput="active(this)" onblur="inactive(this)">
+                                    Male
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="sex" oninput="active(this)" onblur="inactive(this)">
+                                    Female
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Marital Status</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="single" oninput="active(this)" onblur="inactive(this)">
+                                     Single
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="married" oninput="active(this)" onblur="inactive(this)">
+                                    Married
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="windowed" oninput="active(this)" onblur="inactive(this)">
+                                    Widow/er
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="separated" oninput="active(this)" onblur="inactive(this)">
+                                    Separated
+                            </label>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Email</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                                <input class="input" name="email" type="email" oninput="active(this)" onblur="inactive(this)">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Contact Number</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                                <input class="input" name="contact_number" type="text" oninput="active(this)" onblur="inactive(this)">
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+                <div class="field-label is-normal">
+                    <label class="label">Address</label>
+                </div>
+                <div class="field-body">
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
+                                <select id="province"></select>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
+                                <select id="city"></select>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
+                                <select id="baranggay"></select>
+                                <option>Baranggay</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="level column is-12">
+            <h2 class="title is-5 center">Emergency Contact</h2>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Name*</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" name="emergency_contact_name" type="text" oninput="active(this)" onblur="inactive(this)">                                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Relationship</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" name="emergency_contact_relationship" type="text" oninput="active(this)" onblur="inactive(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Contact Number*</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" name="emergency_contact_number" type="text" oninput="active(this)" onblur="inactive(this)">
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="level column is-12">
+                <h2 class="title is-5 center">Medical Background</h2>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Blood Type</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <div class="field">
+                            <div class="control">
+                                <div class="select">
+                                    <select id="blood_type"></select>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Height(m)</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" name="height" type="text" oninput="active(this)" onblur="inactive(this)">
+                                              
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Weight(kg)</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <input class="input" name="weight" type="text" oninput="active(this)" onblur="inactive(this)">                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Allergies</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea input" name="allergies" oninput="active(this)" onblur="inactive(this)"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12 field is-horizontal">
+            <div class="field-label is-normal">
+                <label class="label">Medical History</label>
+            </div>
+            <div class="field-body">
+                <div class="field">
+                    <div class="control">
+                        <textarea class="textarea input" name="medical_history" oninput="active(this)" onblur="inactive(this)"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="level column is-12">
+            <div class="field column">
+                    <div class="control">            
+                        <a class="button is-link is-rounded" id="submit" onclick="end_time()" >Submit</a> 
+                    </div> 
+            </div>
+        </div>
+      </container>
+    <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <script type="text/javascript" src="address.js"></script>
   </body>
 </html>

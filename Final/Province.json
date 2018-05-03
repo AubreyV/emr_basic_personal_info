@@ -1,0 +1,22 @@
+{
+    "Province":["City","Select a Province"],
+    "Biliran":[
+        "Almeria","Biliran","Cabucgayan","Caibiran","Culaba","Kawayan","Maripipi","Naval"
+    ],
+    "Eastern Samar":[
+        "--City--","Arteche","Balangiga","Balangkayan","Can-Avid","Dolores","General MacArthur","Giporlos","Guiuan","Hernani","Jipapad","Lawaan","Liorente","Maslog","Maydolong","Mercedes","Oras","Quindapondan","Salcedo","San Julian","San Policarpo","Sulat","Taft"
+    ],
+    "Leyte":[
+        "--City--","Abuyog","Alangalang","Albuera","Babatngon","Barugo","Bato","Baybay","Burauen","Calubian","Capoocan","Carigara","Dagami","Dulag","Hilongos","Hindang","Inopacan","Isabel","Jaro","Javier","Julita","Kananga","La Paz","Leyte","Macarthur","Mahaplag","Matag-Ob","Matalom","Mayorga","Merida","Ormoc","Palo","Palompon","Pastrana","San Isidro","San Miguel","Santa Fe","Tabango","Tabontabon","Tacloban","Tanauan","Tolosa","Tunga","Villaba"
+    ],
+    "Northern Samar":[
+        "--Province--","Biliran","Eastern Samar","Leyte","Northern Samar","Western Samar","Southern Leyte"
+    ],
+    "Western Samar":[
+        "--Province--","Biliran","Eastern Samar","Leyte","Northern Samar","Western Samar","Southern Leyte"
+    ],
+    "Souhern Leyte":[
+        "--Province--","Biliran","Eastern Samar","Leyte","Northern Samar","Western Samar","Southern Leyte"
+    ]
+   
+}
