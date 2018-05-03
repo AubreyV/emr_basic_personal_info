@@ -33,15 +33,56 @@
                 </div>
             </div>
         </div>
-        
         <div class="level column is-12 field is-horizontal">
+
                 <div class="field-label is-normal">
                     <label class="label">Birth Date</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
                         <div class="control">
-                                <input class="input" name="birthdate" type="date" oninput="active(this)" onblur="inactive(this)">
+                            <div class="select">
+                                <select id="Day">
+                                    <option>Day</option>
+                                    <option>01</option><option>02</option><option>03</option>
+                                    <option>04</option><option>05</option><option>06</option>
+                                    <option>07</option><option>08</option><option>09</option>
+                                    <option>10</option><option>11</option><option>12</option>
+                                    <option>13</option><option>14</option><option>15</option>
+                                    <option>16</option><option>17</option><option>18</option>
+                                    <option>19</option><option>20</option><option>21</option>
+                                    <option>22</option><option>23</option><option>24</option>
+                                    <option>25</option><option>26</option><option>27</option>
+                                    <option>28</option><option>29</option><option>30</option>
+                                    <option>31</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
+                                <select id="Month">
+                                <option>Month</option>
+                                <option>January</option>
+                                <option>February</option>
+                                <option>March</option>
+                                <option>April</option>
+                                <option>May</option>
+                                <option>June</option>
+                                <option>July</option>
+                                <option>August</option>
+                                <option>September</option>
+                                <option>October</option>
+                                <option>November</option>
+                                <option>December</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                                <input class="input" name="birth_year" type="text" placeholder="Year" oninput="active(this)" onblur="inactive(this)">
                         </div>
                     </div>
                 </div>
@@ -106,7 +147,7 @@
         </div>
         <div class="level column is-12 field is-horizontal">
                 <div class="field-label is-normal">
-                    <label class="label">Contact Number</label>
+                    <label class="label">Contact Number*</label>
                 </div>
                 <div class="field-body">
                     <div class="field">
@@ -124,6 +165,14 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
+                                <select id="region"></select>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field">
+                        <div class="control">
+                            <div class="select">
                                 <select id="province"></select>
                                 </select>
                             </div>
@@ -132,16 +181,8 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
-                                <select id="city"></select>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="field">
-                        <div class="control">
-                            <div class="select">
-                                <select id="baranggay"></select>
-                                <option>Baranggay</option>
+                                <select id="city">
+                                    <option>Baranggay</option>
                                 </select>
                             </div>
                         </div>
@@ -198,13 +239,23 @@
             <div class="field-body">
                 <div class="field">
                     <div class="control">
-                        <div class="field">
-                            <div class="control">
-                                <div class="select">
-                                    <select id="blood_type"></select>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="select">
+                            <select id="blood_type">
+                                    <option>--Select Type Below--</option>
+                                    <option>A Positive</option>
+                                    <option>A Negative</option>
+                                    <option>A Unknown</option>
+                                    <option>B Positive</option>
+                                    <option>B Negative</option>
+                                    <option>B Unknown</option>
+                                    <option>AB Positive</option>
+                                    <option>AB Negative</option>
+                                    <option>AB Unknown</option>
+                                    <option>O Positive</option>
+                                    <option>O Negative</option>
+                                    <option>O Unknown</option>
+                                    <option>Unknown</option>
+                            </select>                       
                         </div>
                     </div>
                 </div>
@@ -260,15 +311,15 @@
             </div>
         </div>
         <div class="level column is-12">
-            <div class="field column">
+            <div class="field is-grouped is-grouped-right">
                     <div class="control">            
                         <a class="button is-link is-rounded" id="submit" onclick="end_time()" >Submit</a> 
                     </div> 
             </div>
         </div>
       </container>
-    <script type="text/javascript" src="jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="timer.js"></script>
-    <script type="text/javascript" src="address.js"></script>
+    <script type="text/javascript" src="Js_Files/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="Js_Files/timer.js"></script>
+    <script type="text/javascript" src="Js_Files/dropdown.js"></script>
   </body>
 </html>

@@ -1,0 +1,28 @@
+{
+    "Province":["City","Select a Province"],
+    "Biliran":[
+        "--City--","Almeria","Biliran","Cabucgayan","Caibiran","Culaba","Kawayan","Maripipi","Naval"
+    ],
+    "Eastern Samar":[
+        "--City--","Arteche","Balangiga","Balangkayan","Can-Avid","Dolores","General MacArthur","Giporlos","Guiuan","Hernani","Jipapad","Lawaan","Liorente","Maslog","Maydolong","Mercedes","Oras","Quindapondan","Salcedo","San Julian","San Policarpo","Sulat","Taft"
+    ],
+    "Leyte":[
+        "--City--","Abuyog","Alangalang","Albuera","Babatngon","Barugo","Bato","Baybay","Burauen","Calubian","Capoocan","Carigara","Dagami","Dulag","Hilongos","Hindang","Inopacan","Isabel","Jaro","Javier","Julita","Kananga","La Paz","Leyte","Macarthur","Mahaplag","Matag-Ob","Matalom","Mayorga","Merida","Ormoc","Palo","Palompon","Pastrana","San Isidro","San Miguel","Santa Fe","Tabango","Tabontabon","Tacloban","Tanauan","Tolosa","Tunga","Villaba"
+    ],
+    "Northern Samar":[
+        "--City--","Allen","Biri","Bobon","Capul","Catarman","Catubig","Gamay","La Navas","Laoang","Lapineg","Lavezares","Lope de Vega",
+        "Mapanas","Mondragon","Palapag","Pambujan","Rosario","San Antonio","San Isidro","San Jose","San Roque","San Vicente",
+        "Silvino Lubos","Victoria"
+    ],
+    "Western Samar":[
+        "--City--","Almagro","Basey","Calbayog City","Calbiga","Catbalogan","Daram","Gandara","Hinbangan","Jiabong","Marabut",
+        "Matuguinao","Motiong","Pagsangjan","Pinabacdao","San Jorge","San Jose de Bauan","San Sebastian","Sta. Margarita",
+        "Sta. Rita","Sto. Niño","Tagapulan","Talarora","Tarangnan","Villareal","Wright","Zumarraga"
+    ],
+    "Souhern Leyte":[  
+        "--City--","Anahawan","Bontoc","Hinunangan","Hinundayan","Libagon","Liloan","Limasawa","Maasin","Macrohon","Malitbog",
+        "Padre Burgos","Pintuyan","San Francisco","San Juan","San Ricardo","Silago","Sogod","St. Bernard","Tomas Oppus"
+
+    ]
+   
+}
