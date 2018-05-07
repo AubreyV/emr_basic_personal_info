@@ -45,6 +45,7 @@
 
 	function start_time()
 	{
+        console.log("start")
 		stopwatch = new StopWatch();
 		stopwatch.start();
 	}
@@ -56,16 +57,16 @@
 	}
 
     function active(input) {
-        console.log("active: " + input.name);
         var time = stopwatch.get_elapsed_milliseconds();
         start_map[input.name]=time;
+        console.log("active: " + input.name + ", time: " + time);
     }
 
     function inactive(input) {
-        console.log("inactive: " + input.name);
         var time = stopwatch.get_elapsed_milliseconds();
         end_map[input.name]=time;
         total(input);
+        console.log("inactive: " + input.name + ", time: " + time);
     }
 
     function total(input) {
