@@ -42,7 +42,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
-                                <select id="Day" name="birth_day" onclick="active(this)" onblur="inactive(this)">
+                                <select id="Day" name="birth_day" oninput="active(this)" onblur="inactive(this)">
                                     <option>Day</option>
                                     <option>01</option><option>02</option><option>03</option>
                                     <option>04</option><option>05</option><option>06</option>
@@ -62,7 +62,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
-                                <select id="Month" name="birth_month" onclick="active(this)" onblur="inactive(this)">
+                                <select id="Month" name="birth_month" oninput="active(this)" onblur="inactive(this)">
                                 <option>Month</option>
                                 <option>January</option>
                                 <option>February</option>
@@ -114,19 +114,19 @@
                     <div class="field">
                         <div class="control">
                             <label class="radio">
-                                <input type="radio" name="single" oninput="active(this)" onblur="inactive(this)">
+                                <input type="radio" name="status" oninput="active(this)" onblur="inactive(this)">
                                      Single
                             </label>
                             <label class="radio">
-                                <input type="radio" name="married" oninput="active(this)" onblur="inactive(this)">
+                                <input type="radio" name="status" oninput="active(this)" onblur="inactive(this)">
                                     Married
                             </label>
                             <label class="radio">
-                                <input type="radio" name="windowed" oninput="active(this)" onblur="inactive(this)">
+                                <input type="radio" name="status" oninput="active(this)" onblur="inactive(this)">
                                     Widow/er
                             </label>
                             <label class="radio">
-                                <input type="radio" name="separated" oninput="active(this)" onblur="inactive(this)">
+                                <input type="radio" name="status" oninput="active(this)" onblur="inactive(this)">
                                     Separated
                             </label>
                         </div>
@@ -165,7 +165,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
-                                <select id="region"></select>
+                                <select id="region" name="province" oninput="active(this)" onblur="inactive(this)"></select>
                                 </select>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
-                                <select id="province"></select>
+                                <select id="province" name="city" oninput="active(this)" onblur="inactive(this)"></select>
                                 </select>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                     <div class="field">
                         <div class="control">
                             <div class="select">
-                                <select id="city">
+                                <select id="city" name="baranggay" oninput="active(this)" onblur="inactive(this)">
                                     <option>Baranggay</option>
                                 </select>
                             </div>
@@ -240,7 +240,7 @@
                 <div class="field">
                     <div class="control">
                         <div class="select">
-                            <select id="blood_type" name="blood_type" onclick="active(this)" onblur="inactive(this)">
+                            <select id="blood_type" name="blood_type" oninput="active(this)" onblur="inactive(this)">
                                     <option>--Select Type Below--</option>
                                     <option>A Positive</option>
                                     <option>A Negative</option>
