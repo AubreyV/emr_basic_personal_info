@@ -58,8 +58,11 @@
 
     function active(input) {
         var time = stopwatch.get_elapsed_milliseconds();
-		start_map[input.name] = time
-		console.log("active: " + input.name + ", time: " + time);
+
+        if(start_map[input.name] == null) {
+			start_map[input.name] = time
+			console.log("active: " + input.name + ", time: " + time);
+    	}
     }
 
     function inactive(input) {
