@@ -1,3 +1,0 @@
-==time in milliseconds==
-
-{"lastname":2606,"firstname":2458,"birth_day":516,"birth_month":512,"birth_year":2346,"sex":2235,"status":2230,"contact_number":3917,"province":568,"city":419,"baranggay":824,"emergency_contact_name":1254,"emergency_contact_relationship":1985,"emergency_contact_number":3536,"blood_type":752,"height":1525,"weight":4128,"page":107845}

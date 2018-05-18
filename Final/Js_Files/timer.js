@@ -58,8 +58,8 @@
 
     function active(input) {
         var time = stopwatch.get_elapsed_milliseconds();
-        start_map[input.name]=time;
-        console.log("active: " + input.name + ", time: " + time);
+		start_map[input.name] = time
+		console.log("active: " + input.name + ", time: " + time);
     }
 
     function inactive(input) {
@@ -82,16 +82,6 @@
         var json = JSON.stringify(total);
         json = "==time in milliseconds==\n\n" + json;
         var submit = document.getElementById("submit");
-        // submit.style.visibility = "hidden";
-
-        // var button = document.createElement("button");
-        // var note = document.createElement("p");
-        // note.innerHTML = "Please click the <em>Download</em> button after submitting."
-        // var go = document.createElement("a");
-        // go.innerHTML = "Download";
-        // button.appendChild(go);
-        // document.body.appendChild(button);
-        // document.body.appendChild(note);
 
         var file = new File([json], {type: "application/octet-stream"});
         submit.href = (URL || webkitURL).createObjectURL(file);
